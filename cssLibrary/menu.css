@@ -1,0 +1,44 @@
+.menu{
+    background-color: rgb(241, 236, 218);
+    display: grid;
+    float: right;
+    height: 100%;
+    position: grid;
+    width: 80%; 
+}
+.menuNavBar{
+    background-color: salmon;
+    border-left: 1px solid rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 2s;
+    width:5%;
+}
+.menuNavBar ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    transform: rotate(-90deg); 
+    width:50%;
+}
+.menuNavBar ul li{
+    margin-right:40px;
+}
+.menuNavBar ul li:hover{
+    border-bottom: 2px solid rgb(241, 236, 218)
+}
+.menuNavBar ul li a{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+.fadeOut{
+    opacity: 0;
+}
+.fadeIn{
+    opacity: 1;
+}

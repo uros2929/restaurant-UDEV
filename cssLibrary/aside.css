@@ -1,0 +1,164 @@
+.aside{
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+}
+.resLogo{
+    align-items: center;
+    display: grid;
+    height: 20%;
+    justify-content: center;
+    margin: 10% 0;
+    width: 100%;
+}
+.resLogo a{
+    text-decoration: none;
+    color: rgb(241, 236, 218);
+}
+.navBar{
+    height: 40%;
+    position: relative;
+    text-align: center;
+}
+.navBar ul{
+    padding: 0;
+}
+.navBar ul li{
+    font-size: 24px;
+    line-height: 1.5;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.navBar ul li a{
+    color: rgb(241, 236, 218);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+.navBar ul li a:hover{
+    border-top: 1px solid salmon;
+    border-bottom: 1px solid salmon; 
+    
+}
+.resContact{
+    height: 20%;
+    text-align: center;
+}
+.resContact i{
+    color: rgb(200,163,116);
+    margin: 0 5%;
+}
+.resContact p{
+    color: rgb(241, 236, 218);
+}
+.resContact a{
+    color: rgb(241, 236, 218);
+    text-decoration: none;
+}
+.resBookTable{
+    background-color: rgb(241, 236, 218);
+    height: 13%;
+}
+.resBookTableText{
+    align-content: center;
+    cursor: pointer;
+    display: grid;
+    height: 70%;
+    letter-spacing: 4px;
+    margin: 5% 5%;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+.resBookTableText:hover{
+    letter-spacing: 10px;
+}
+.resBookTableText::before,
+.resBookTableText::after {
+  animation: fillBorderBookTable 1s infinite;
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.resBookTableText:hover::before,
+.resBookTableText:hover::after{
+    animation:step-end;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+
+@keyframes fillBorderBookTable{
+    0%{
+        width: 0;
+        height:0%;
+        border: none;
+    }
+    10%{
+        width:20%;
+        border-top:1px solid black;
+       
+    }
+    20%{
+        width:40%;
+        border-top:1px solid black;
+       
+    }
+    30%{
+        width:60%;
+        border-top:1px solid black;
+       
+    }
+    40%{
+        width:80%;
+        border-top:1px solid black;
+      
+    }
+    50%{
+        width:100%;
+        border-top:1px solid black;
+     
+    }
+    60%{
+        width:100%;
+        height:0%;
+        border-top:1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    70%{
+        width:100%;
+        height:40%;
+        border-top:1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    80%{
+        width:100%;
+        height:60%;
+        border-top:1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    90%{
+        width:100%;
+        height:80%;
+        border-top:1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    100%{
+        width:100%;
+        height:100%;
+        border-top:1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black; 
+    }
+   
+}
+
+

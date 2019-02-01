@@ -1,0 +1,22 @@
+.aboutUs{
+    align-items: center;
+    display: grid;
+    float: right;
+    height: 100%;
+    text-align: center;
+    width: 80%;
+}
+.aboutUs-1{
+    margin: 0 auto;
+    width: 40%;
+}
+.aboutUs-1-1{
+    background-image: url('../assets/restaurant1.jpg');
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+
