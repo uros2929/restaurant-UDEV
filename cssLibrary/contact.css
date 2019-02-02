@@ -1,0 +1,59 @@
+.contact{
+    align-content: center;
+    background-color: rgb(241, 236, 218);
+    display: grid;
+    float: right;
+    grid-template-columns: 20% 20% 25% 25%;
+    grid-template-rows: 25% 45% auto;
+    grid-column-gap: 2%;
+    grid-template-areas: 
+    "findUs findUs googleMap googleMap "
+    "openingHours openingHours googleMap googleMap"
+    ". . . .";
+    height: 100%;
+    text-align: center;
+    width: 80%;
+}
+.findUs{
+    color: rgb(48, 48, 48);
+    grid-area: findUs;
+}
+.googleMap{
+    grid-area: googleMap;
+    opacity: 0;
+}
+.googleMap iframe{
+    border: 2px dotted salmon;
+}
+.openingHours{
+    color: rgb(48, 48, 48);
+    grid-area: openingHours;
+}
+.openingHours hr, .findUs hr{
+    border: 1px dashed salmon;
+}
+
+@keyframes scaleInMap{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(1.5);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateX(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleOutMap {
+    0%{
+        transform: scale(1);
+        opacity: 1; 
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}

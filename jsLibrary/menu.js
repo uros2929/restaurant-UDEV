@@ -19,3 +19,6 @@ function showNavBarMenu() {
         }
     })
 }
+function addFadeInClassOnClick(){
+    navBarMenu.classList.add('fadeIn');
+}

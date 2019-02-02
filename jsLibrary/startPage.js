@@ -4,8 +4,8 @@ const startPageDiv = document.getElementById('startPage-1'),
 let imgIndex = 1,
     imgArray = ['food1', 'food2', 'food4', 'food3'],
     arrayForGrid = [];
-imgIntervalDuration = 15000,
-    imgTimeOutDuration = 13500;
+imgIntervalDuration = 8000,
+    imgTimeOutDuration = 6500;
 
 chanageBackgroundImg();
 chanageBackgroundImgButtons();

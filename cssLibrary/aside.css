@@ -9,7 +9,7 @@
 .resLogo{
     align-items: center;
     display: grid;
-    height: 20%;
+    height: 23%;
     justify-content: center;
     margin: 10% 0;
     width: 100%;
@@ -59,7 +59,7 @@
 }
 .resBookTable{
     background-color: rgb(241, 236, 218);
-    height: 13%;
+    height: 10%;
 }
 .resBookTableText{
     align-content: center;
