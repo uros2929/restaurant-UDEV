@@ -1,0 +1,67 @@
+.bookTableModal{
+background-color: rgb(48, 48, 48);
+display: none;
+height: 50%;
+left: 30%;
+margin: 0 auto;
+position: fixed;
+top: 25%;
+width: 60%; 
+}
+.bookTableModal p{
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    margin-right: 2%;
+    position: relative;
+}
+.bookTableModal p:hover{
+    transform: scale(1.5)
+}
+.bookTableModal h1{
+    color: white;
+    text-align: center;
+}
+.formBookTable{
+    margin: 0 auto;
+    height: 50%;
+    transform: translateY(50%);
+    width: 50%;
+}
+.formBookTable form{
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.formBookTable input{
+    font-size: 20px;
+    margin-top: 3%;
+    text-align: center;
+    width: 100%;
+}
+.formBookTable input[type='submit']{
+    background-color: rgb(48, 48, 48);
+    border: none;
+    border-top: 1px solid salmon;
+    border-bottom: 1px solid salmon;
+    border-radius: 25%;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 25%;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+@keyframes slideModal{
+    0%{
+        transform: scale(0)
+    }
+    100%{
+        transform: scale(1)
+    }
+}

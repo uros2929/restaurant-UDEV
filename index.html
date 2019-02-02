@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./cssLibrary/aboutUs.css">
     <link rel="stylesheet" href="./cssLibrary/contact.css">
     <link rel="stylesheet" href="./cssLibrary/footer.css">
+    <link rel="stylesheet" href="./cssLibrary/bookTableModal.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
     <title>UDEV Bistro</title>
@@ -29,7 +30,7 @@
             <ul>
                 <li><a href="#menu" onclick="addFadeInClassOnClick()">MENU</a></li>
                 <li><a href="#aboutUs">ABOUT AS</a></li>
-                <li><a href="">GALLERY</a></li>
+                <li><a href="" onclick="galleryAlert()">GALLERY</a></li>
                 <li><a href="#contact" onclick="addAnimationOnClick()">CONTACT</a></li>
             </ul>
         </div>
@@ -40,7 +41,7 @@
             <p><a href="">+381/64 00 00 000</a></p>
         </div>
         <div class="container resBookTable">
-            <div class="container resBookTableText">
+            <div class="container resBookTableText" onclick="openModalBookTable()">
                 <p>BOOK A TABLE</p>
             </div>
         </div>
@@ -98,7 +99,19 @@
 
 
     <!-- BOOK TABLE MODAL -->
-
+    <div class="container bookTableModal" id="bookTableModal">
+        <p onclick="closeModalBookTable()" id="closeModalButton">&times;</p>
+        <div class="conainer formBookTable">
+            <form action="?" method="POST" id="formTable">
+                <input type="text" name="FirstName" placeholder="First name" required>
+                <input type="text" name="LastName" placeholder="Last name" required>
+                <input type="tel" name="PhoneNumber" placeholder="Phone number" required>
+                <input type="email" name="Email" placeholder="Email" required><br>
+                <input type="submit" value="Send" onclick="saveBookTableData(event)">
+            </form>
+            <h1><i>BOOK YOUR TABLE NOW !</i></h1>
+        </div>
+    </div>
 
 
 
@@ -106,7 +119,9 @@
     <script src="./jsLibrary/startPage.js"></script>
     <script src="./jsLibrary/menu.js"></script>
     <script src="./jsLibrary/aboutUs.js"></script>
+    <script src="./jsLibrary/gallery.js"></script>
     <script src="./jsLibrary/contact.js"></script>
+    <script src="./jsLibrary/bookTableModal.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
