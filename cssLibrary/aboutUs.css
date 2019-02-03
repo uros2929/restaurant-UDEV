@@ -18,5 +18,29 @@
     margin-bottom: 10%;
     width: 50%;
 }
+@media only screen and (max-width:860px){
+    .aboutUs{
+        float: left;
+        width: 100%;
+        transform: translateY(15%);
+    }
+}
+
+@media only screen and (max-width:420px){
+    .aboutUs{
+        transform: translateY(25%);
+    }
+    .aboutUs-1{
+        width: 100%;
+    }
+    .aboutUs-1-1{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:320px){
+    .aboutUs-1-1{
+        width: 50%;
+    }
+}
 
 

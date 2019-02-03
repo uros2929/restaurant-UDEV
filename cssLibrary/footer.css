@@ -10,3 +10,16 @@
 .footer h3{
     color: white;
 }
+@media only screen and (max-width:860px){
+    .footer{
+        float: left;
+        height: 15%;
+        transform: translateY(100%);
+        width: 100%;
+    }
+}
+@media only screen and (max-width:420px){
+    .footer{
+        height: 20%;
+    }
+}

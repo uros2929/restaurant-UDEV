@@ -57,3 +57,30 @@
         opacity: 0;
     }
 }
+@media only screen and (max-width:860px){
+    .contact{
+        float: left;
+        height: 80%;
+        transform: translateY(15%);
+        width: 100%;
+    }
+}
+@media only screen and (max-width:860px){
+    .contact{
+        transform: translateY(25%);
+        height: 100%;
+    }
+}
+@media only screen and (max-width:320px){
+    .contact{
+        grid-template-columns:100%;
+        grid-template-rows: 30% 40% auto;
+        grid-template-areas: 
+        "findUs"
+        "openingHours"
+        "googleMap";
+    }
+    .openingHours hr{
+        border: none;
+    }
+}

@@ -35,7 +35,6 @@ function chanageBackgroundImgButtons() {
     for (let numOfButtons = 0; numOfButtons < imgArray.length; numOfButtons++) {
         changeImgButtonsDiv.innerHTML += `<div class="button" id="buttonChangeImg${numOfButtons}" onclick="changeImgOnClick(event)"></div>`;
     }
-    console.log('auto '.repeat(imgArray.length))
     changeImgButtonsDiv.style.gridTemplateColumns = 'auto '.repeat(imgArray.length);
 }
 

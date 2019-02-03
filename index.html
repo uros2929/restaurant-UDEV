@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="./cssLibrary/contact.css">
     <link rel="stylesheet" href="./cssLibrary/footer.css">
     <link rel="stylesheet" href="./cssLibrary/bookTableModal.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>UDEV Bistro</title>
 </head>
 
@@ -25,6 +24,9 @@
             <a href="">
                 <h1>UDEV Bistro Logo</h1>
             </a>
+        </div>
+        <div class="menuButtonForResponsive">
+            <i class="fas fa-bars fa-4x" onclick="openNavBarMenuResposive()"></i>                                                                                                                                      
         </div>
         <div class="container navBar">
             <ul>
@@ -109,19 +111,33 @@
                 <input type="email" name="Email" placeholder="Email" required><br>
                 <input type="submit" value="Send" onclick="saveBookTableData(event)">
             </form>
-            <h1><i>BOOK YOUR TABLE NOW !</i></h1>
+            <h1><i>BOOK YOUR TABLE NOW</i></h1>
         </div>
+    </div>
+
+    <div class="container navBarMenuResponsive" id="navBarMenuResponsive" onclick="closeNavBarMenuResposive()">
+      <div class="contaner navBarMenuResponsiveUlList">
+        <ul>
+            <li><a href="#menu" onclick="closeNavBarMenuResposive()">MENU</a></li>
+            <li><a href="#aboutUs" onclick="closeNavBarMenuResposive()">ABOUT AS</a></li>
+            <li><a href="#" onclick="closeNavBarMenuResposive()">GALLERY</a></li>
+            <li><a href="#contact" onclick="closeNavBarMenuResposive()">CONTACT</a></li>
+            <li><a href="#" onclick="closeNavBarMenuResposive();openModalBookTable()">BOOK A TABLE</a></li>
+        </ul>
+      </div>
     </div>
 
 
 
     <script src="main.js"></script>
+    <script src="./jsLibrary/aside.js"></script>
     <script src="./jsLibrary/startPage.js"></script>
     <script src="./jsLibrary/menu.js"></script>
     <script src="./jsLibrary/aboutUs.js"></script>
     <script src="./jsLibrary/gallery.js"></script>
     <script src="./jsLibrary/contact.js"></script>
     <script src="./jsLibrary/bookTableModal.js"></script>
+    <script src="./jsLibrary/navBarMenuResposive.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

@@ -1,12 +1,12 @@
 .bookTableModal{
-background-color: rgb(48, 48, 48);
-display: none;
-height: 50%;
-left: 30%;
-margin: 0 auto;
-position: fixed;
-top: 25%;
-width: 60%; 
+    background-color: rgba(48, 48, 48,0.8);
+    display: none;
+    height: 50%;
+    left: 30%;
+    margin: 0 auto;
+    position: fixed;
+    top: 25%;
+    width: 60%; 
 }
 .bookTableModal p{
     color: white;
@@ -42,7 +42,7 @@ width: 60%;
     width: 100%;
 }
 .formBookTable input[type='submit']{
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48,0.8);
     border: none;
     border-top: 1px solid salmon;
     border-bottom: 1px solid salmon;
@@ -63,5 +63,31 @@ width: 60%;
     }
     100%{
         transform: scale(1)
+    }
+}
+
+@media only screen and (max-width:860px){
+    .bookTableModal{
+        background-color: rgba(48, 48, 48,0.8);
+        left: 0;
+        width: 100%;
+    }
+    .formBookTable input[type='submit']{
+        background-color: rgba(48, 48, 48,0.8);  
+    }
+}
+@media only screen and (max-width:420px){
+    .formBookTable{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:375px){
+    .formBookTable h1 {
+        display: none;
+    }
+}
+@media only screen and (max-width:320px){
+    .formBookTable h1 {
+        display: none;
     }
 }

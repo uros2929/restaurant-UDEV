@@ -5,7 +5,6 @@ const navBarMenu = document.getElementById('menuNavBar');
 showNavBarMenu();
 function showNavBarMenu() {
     window.addEventListener('scroll', () => {
-        console.log(window.scrollY)
         if (window.scrollY <= 305) {
             navBarMenu.classList.remove('fadeIn');
             navBarMenu.classList.add('fadeOut');
@@ -17,8 +16,12 @@ function showNavBarMenu() {
             navBarMenu.classList.remove('fadeIn');
             navBarMenu.classList.add('fadeOut');
         }
+        if (window.innerWidth <= 860) {
+            navBarMenu.classList.remove('fadeIn');
+            navBarMenu.classList.remove('fadeIn');
+        }
     })
 }
-function addFadeInClassOnClick(){
+function addFadeInClassOnClick() {
     navBarMenu.classList.add('fadeIn');
 }

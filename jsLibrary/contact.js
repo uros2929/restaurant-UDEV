@@ -21,5 +21,9 @@ function addAnimationOnScroll(){
             googleMap.style.animation="scaleOutMap 1s both";
             googleMap.style.opacity="0";
         }
+        if (window.innerWidth <= 420) {
+            googleMap.style.animation="";
+            googleMap.style.opacity="1";
+        }
     })
 }

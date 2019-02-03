@@ -90,8 +90,48 @@
     height: 100%;
     width: 100%;
 }
-
-
+.menuButtonForResponsive{
+    align-items: center;
+    color:rgb(200,163,116);
+    display: none;
+    justify-content: center;
+    margin-top: 1%;
+    height: 35%;
+    width: 100%;
+}
+.menuButtonForResponsive i{
+    cursor: pointer;
+}
+.navBarMenuResponsive{
+    align-content: center;
+    background-color: rgba(255, 255, 255,0.7); 
+    display: none;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.navBarMenuResponsiveUlList{
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 50%;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    width: 400px;
+}
+.navBarMenuResponsiveUlList ul{
+    padding: 0;
+}
+.navBarMenuResponsiveUlList ul li{
+    list-style: none;
+    text-align: center;
+}
+.navBarMenuResponsiveUlList ul li a{
+    color:rgb(48, 48, 48);
+    line-height: 70px;
+    text-decoration: none;
+}
 @keyframes fillBorderBookTable{
     0%{
         width: 0;
@@ -161,4 +201,41 @@
    
 }
 
+@media only screen and (max-width:860px){
+.aside{
+    height: 15%;
+    width: 100%;
+    position: absolute;
+}
+.resLogo{
+    height: 35%;
+    margin: 0;
+    width: 100%;
+}
+.navBar{
+    display: none;
+}
+.resContact{
+    display: none;
+}
+.resBookTable{
+    display: none;
+}
+.menuButtonForResponsive{
+    display: grid;
+}
+}
 
+@media only screen and (max-width:420px){
+    .aside{
+        height: 25%;
+    }
+    .navBarMenuResponsiveUlList{
+        height: 310px;
+        width: 310px;
+        font-size: 24px;
+    }
+    .navBarMenuResponsiveUlList ul li a{
+        line-height: 50px;
+    }
+}

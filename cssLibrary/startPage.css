@@ -1,6 +1,7 @@
 .startPage-1{
     background-image: url('../assets/food1.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: grid;
     float: right;
     height: 100%;
@@ -31,4 +32,21 @@
 }
 .button:hover{
     transform: scale(1.5)
+}
+
+@media only screen and (max-width:860px){
+    .startPage-1{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: left;
+        height: 80%;
+        width: 100%;
+        top: 15%; 
+    }
+}
+
+@media only screen and (max-width:420px){
+    .startPage-1{
+        top: 25%;
+    }
 }

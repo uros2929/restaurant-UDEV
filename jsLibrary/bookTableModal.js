@@ -8,7 +8,7 @@ function closeModalBookTable(){
 }
 function openModalBookTable(){
     modalBookTable.style.display='block';
-    modalBookTable.style.animation='slideModal'
+    modalBookTable.style.animation='slideModal 0.8s both'
 }
 function saveBookTableData(event){
 event.preventDefault();
