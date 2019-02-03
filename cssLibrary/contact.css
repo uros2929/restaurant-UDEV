@@ -71,7 +71,7 @@
         height: 100%;
     }
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:320px),screen and (max-height: 660px){
     .contact{
         grid-template-columns:100%;
         grid-template-rows: 30% 40% auto;

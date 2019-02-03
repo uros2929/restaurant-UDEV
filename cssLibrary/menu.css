@@ -59,7 +59,7 @@
         transform: translateY(25%)
     }
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:320px), screen and (max-height: 660px){
     .menuNavBar{
         display: grid;
         width: 100%;
